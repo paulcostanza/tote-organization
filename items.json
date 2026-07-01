@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "item": "small cutting boards",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 2,
+        "item": "medium cutting boards",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 3,
+        "item": "large cutting boards",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 4,
+        "item": "extra large cutting boards",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 5,
+        "item": "rapid boil electric kettle",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 6,
+        "item": "plastic oxo mixing bowls",
+        "quantity": 4,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 7,
+        "item": "cutting board rack",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 8,
+        "item": "large plastic rubbermaid drink pitcher",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 9,
+        "item": "glass vase",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 10,
+        "item": "glass pyrext measuring cups",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 11,
+        "item": "solid plastic serving spoons",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 12,
+        "item": "slotted plastic serving spoons",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 13,
+        "item": "slotted plastic turners",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 14,
+        "item": "plastic soup ladel",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 15,
+        "item": "plastic soup ladel",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 16,
+        "item": "plastic spaghetti server",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 17,
+        "item": "rubber oxo spatulas",
+        "quantity": 4,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 18,
+        "item": "rubber egg flipper",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 19,
+        "item": "plastic sink strainers",
+        "quantity": 4,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 20,
+        "item": "small & large metal whisk",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 21,
+        "item": "rubber squishy oxo measuring cups",
+        "quantity": 2,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 22,
+        "item": "shot glass measuring cup",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 23,
+        "item": "silicone air fryer liner (circle)",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 24,
+        "item": "paper air fryer liner (circle)",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    },
+    {
+        "id": 25,
+        "item": "oxo metal pilla pan",
+        "quantity": 1,
+        "tote": "kitchen #1"
+    }
+]

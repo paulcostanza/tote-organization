@@ -1,0 +1,39 @@
+/* Using https://simplecss.org/ */
+/* need to make styling dynamic in JS */
+/* add sticky search bar */
+/* add magnifying glass */
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 9px;
+}
+
+li:nth-of-type(odd) {
+    background-color: #efefef;
+}
+
+li:last-of-type {
+    border-radius: 10px;
+}
+
+li>span {
+    float: right;
+}
+
+.tote {
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
