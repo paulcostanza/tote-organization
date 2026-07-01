@@ -2,6 +2,7 @@
 /* need to make styling dynamic in JS */
 /* add sticky search bar */
 /* add magnifying glass */
+/* add arrow buttons to jump from tote to tote */
 
 h2 {
     text-align: center;
@@ -32,6 +33,7 @@ li>span {
 .tote {
     border: solid black 1px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .hide {

@@ -1,7 +1,10 @@
 const kitchenOneList = document.querySelector('.kitchen-1-list')
+const kitchenTwoList = document.querySelector('.kitchen-2-list')
 const searchInput = document.querySelector("[search-input]")
 let items = []
 
+// need to add speration by totes: data.item.tote!
+// add an if kitchen-1-list is empty, toggle 'hide' to 'tote-container-one' class!
 fetch("./items.json")
     .then(res => res.json())
     .then(data => {
@@ -16,7 +19,15 @@ fetch("./items.json")
             span.textContent = quantity
 
             list.appendChild(span)
-            kitchenOneList.appendChild(list)
+            console.log(item.tote)
+
+            switch (item.tote) {
+                case "kitchen #1":
+                    kitchenOneList.appendChild(list)
+                    break
+                case "kitchen #2":
+                    kitchenTwoList.appendChild(list)
+            }
             return { name: itemName, element: list }
         })
     })
