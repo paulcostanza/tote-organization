@@ -5,6 +5,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+body:has(input:focus) header {
+    display: none;
+}
+
 /********************* H E A D E R *********************/
 
 header {
@@ -33,6 +37,11 @@ input {
     /* To prevent default styling on different web browsers */
     appearance: none;
     -webkit-appearance: none;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .search-wrapper {
