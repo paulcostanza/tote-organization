@@ -28,6 +28,11 @@ input {
     margin: auto;
     padding: 12px;
     font-style: italic;
+    border: 1px solid black;
+
+    /* To prevent default styling on different web browsers */
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .search-wrapper {

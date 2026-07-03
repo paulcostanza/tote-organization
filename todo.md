@@ -7,3 +7,6 @@ Add regex for...
 
 Style...
 - needs some color
+
+Random
+- when searching hide the header, or else it takes up a huge section
