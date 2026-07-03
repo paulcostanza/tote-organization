@@ -1,9 +1,11 @@
 ## search
 
-Search > Add regex for...
-- "metal/silicone tongs" -> metal tongs | silicone tongs
-- & -> and
-- and -> &
+Search 
+- add x on right side for a quick delete of text
+- Add regex for...
+    - "metal/silicone tongs" -> metal tongs | silicone tongs
+    - & -> and
+    - and -> &
 
 Style...
 - needs some color
