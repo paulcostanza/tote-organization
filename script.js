@@ -1,5 +1,6 @@
 const kitchenOneList = document.querySelector('.kitchen-1-list')
 const kitchenTwoList = document.querySelector('.kitchen-2-list')
+const kitchenThreeList = document.querySelector('.kitchen-3-list')
 const searchInput = document.querySelector("[search-input]")
 let items = []
 
@@ -19,7 +20,6 @@ fetch("./items.json")
             span.textContent = quantity
 
             list.appendChild(span)
-            console.log(item.tote)
 
             switch (item.tote) {
                 case "kitchen #1":
@@ -27,6 +27,12 @@ fetch("./items.json")
                     break
                 case "kitchen #2":
                     kitchenTwoList.appendChild(list)
+                    break
+                case "kitchen #3":
+                    kitchenThreeList.appendChild(list)
+                    break
+                default:
+                    console.log('Uh... you should\'t be here!')
             }
             return { name: itemName, element: list }
         })
@@ -34,8 +40,6 @@ fetch("./items.json")
 
 searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase() // whatever the user types into the search bar
-    console.log(value)
-    console.log(items)
 
     items.forEach(item => {
         const isVisible = item.name.toLowerCase().includes(value)

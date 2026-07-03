@@ -406,5 +406,71 @@
         "item": "medium gotham pan",
         "quantity": 1,
         "tote": "kitchen #2"
+    },
+    {
+        "id": 69,
+        "item": "gotham pot with metal strainer pan & lid",
+        "quantity": 1,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 70,
+        "item": "sauce pot with lids",
+        "quantity": 2,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 71,
+        "item": "glass bowl set with lids",
+        "quantity": 4,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 72,
+        "item": "short turquoise yeti tumbler",
+        "quantity": 1,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 73,
+        "item": "breast cancer tervis tumbler",
+        "quantity": 1,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 74,
+        "item": "frozen tervis tumbler",
+        "quantity": 1,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 75,
+        "item": "disney travel mugs",
+        "quantity": 2,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 76,
+        "item": "aventura travel mugs",
+        "quantity": 2,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 77,
+        "item": "atria travel mug",
+        "quantity": 1,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 78,
+        "item": "corelle bowls",
+        "quantity": 10,
+        "tote": "kitchen #3"
+    },
+    {
+        "id": 79,
+        "item": "small corelle plates",
+        "quantity": 8,
+        "tote": "kitchen #3"
     }
 ]
