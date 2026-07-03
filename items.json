@@ -682,5 +682,191 @@
         "item": "fidelity cardboard box",
         "quantity": 1,
         "tote": "miscellaneous #1"
+    },
+    {
+        "id": 115,
+        "item": "adjustable youcopia shelves",
+        "quantity": 2,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 116,
+        "item": "water bottle rack",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 117,
+        "item": "zero water fridge dispenser",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 118,
+        "item": "stemless wine glasses",
+        "quantity": 8,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 119,
+        "item": "coffee pod carousel",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 120,
+        "item": "new zero water filters",
+        "quantity": 3,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 121,
+        "item": "butter dish",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 122,
+        "item": "apple slicer",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 123,
+        "item": "silicone egg cooking rings",
+        "quantity": 2,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 124,
+        "item": "vegetable peeler",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 125,
+        "item": "cookie dough scooper",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 126,
+        "item": "microwave egg cooker",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 127,
+        "item": "stainless steel box grater",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 128,
+        "item": "salad dressing shaker",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 129,
+        "item": "nutri chopper and accessories",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 130,
+        "item": "veggie spiralizer",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 131,
+        "item": "decorative taco stands",
+        "quantity": 4,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 132,
+        "item": "avocado slicer",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 133,
+        "item": "3-1 egg separator",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 134,
+        "item": "strawberry huller",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 135,
+        "item": "wine stoppers/covers",
+        "quantity": 2,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 136,
+        "item": "crumbl cookie cutter",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 137,
+        "item": "metal rolling pin",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 138,
+        "item": "piece metal grilling tool set",
+        "quantity": 2,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 139,
+        "item": "plastic organizers/containers",
+        "quantity": 2,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 140,
+        "item": "dish squeege",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 141,
+        "item": "dish scrapers",
+        "quantity": 4,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 142,
+        "item": "small silicone salad dressing to-go bottle",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 143,
+        "item": "metal spoon rest",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 144,
+        "item": "corn on the cobb holders",
+        "quantity": 1,
+        "tote": "kitchen #5"
+    },
+    {
+        "id": 145,
+        "item": "plastic utensils/chopstick set",
+        "quantity": 2,
+        "tote": "kitchen #5"
     }
 ]
