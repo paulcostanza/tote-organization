@@ -472,5 +472,119 @@
         "item": "small corelle plates",
         "quantity": 8,
         "tote": "kitchen #3"
+    },
+    {
+        "id": 80,
+        "item": "berry storage containers",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 81,
+        "item": "round cake pans",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 82,
+        "item": "round cake carrier with server",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 83,
+        "item": "marg. glasses",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 84,
+        "item": "juice glasses",
+        "quantity": 8,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 85,
+        "item": "premium cake decorating kit",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 86,
+        "item": "pie carring case",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 87,
+        "item": "decorating tips for icing",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 88,
+        "item": "12-cup muffin tins",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 89,
+        "item": "square cake pans",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 90,
+        "item": "waf pans",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 91,
+        "item": "meatloaf pan with built in strainer",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 92,
+        "item": "plastic fenway popcorn",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 93,
+        "item": "decorative oven mitt",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 94,
+        "item": "decorative/holiday hand towels",
+        "quantity": 12,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 95,
+        "item": "piece wilton icing coloring set",
+        "quantity": 8,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 82,
+        "item": "extra toaster metal rack",
+        "quantity": 1,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 83,
+        "item": "cookie wire racks",
+        "quantity": 2,
+        "tote": "kitchen #4"
+    },
+    {
+        "id": 84,
+        "item": "cookie sheets",
+        "quantity": 2,
+        "tote": "kitchen #4"
     }
 ]

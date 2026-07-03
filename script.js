@@ -1,15 +1,23 @@
+// the unordered list
 const kitchenOneList = document.querySelector('.kitchen-1-list')
 const kitchenTwoList = document.querySelector('.kitchen-2-list')
 const kitchenThreeList = document.querySelector('.kitchen-3-list')
+const kitchenFourList = document.querySelector('.kitchen-4-list')
+
+// container for h2 and uorderered list
+const toteContainerOne = document.querySelector('.tote-container-1')
+const toteContainerTwo = document.querySelector('.tote-container-2')
+const toteContainerThree = document.querySelector('.tote-container-3')
+const toteContainerFour = document.querySelector('.tote-container-4')
 const searchInput = document.querySelector("[search-input]")
+
+const main = document.querySelector('main')
+const footer = document.querySelector('footer')
 let items = []
 
-// need to add speration by totes: data.item.tote!
-// add an if kitchen-1-list is empty, toggle 'hide' to 'tote-container-one' class!
 fetch("./items.json")
     .then(res => res.json())
     .then(data => {
-
         items = data.map(item => {
             const list = document.createElement('li')
             const span = document.createElement('span')
@@ -31,6 +39,9 @@ fetch("./items.json")
                 case "kitchen #3":
                     kitchenThreeList.appendChild(list)
                     break
+                case "kitchen #4":
+                    kitchenFourList.appendChild(list)
+                    break
                 default:
                     console.log('Uh... you should\'t be here!')
             }
@@ -46,4 +57,19 @@ searchInput.addEventListener("input", (e) => {
         item.element.classList.toggle('hide', !isVisible)
     })
 
+    // hide tote section if no items match search parameters
+    const kitchenOneHasVisibleItem = kitchenOneList.querySelector("li:not(.hide)") !== null
+    const kitchenTwoHasVisibleItem = kitchenTwoList.querySelector("li:not(.hide)") !== null
+    const kitchenThreeHasVisibleItem = kitchenThreeList.querySelector("li:not(.hide)") !== null
+    const kitchenFourHasVisibleItem = kitchenFourList.querySelector("li:not(.hide)") !== null
+
+    toteContainerOne.classList.toggle('hide', !kitchenOneHasVisibleItem)
+    toteContainerTwo.classList.toggle('hide', !kitchenTwoHasVisibleItem)
+    toteContainerThree.classList.toggle('hide', !kitchenThreeHasVisibleItem)
+    toteContainerFour.classList.toggle('hide', !kitchenFourHasVisibleItem)
+
+    // toggle "no items match that description" 
+    const mainHasVisibleDiv = main.querySelector("div:not(.hide)") !== null
+    footer.classList.toggle('hide', mainHasVisibleDiv)
 })
+

@@ -85,3 +85,16 @@ li>span {
 .hide {
     display: none;
 }
+
+/********************* F O O T E R *********************/
+
+footer>p {
+    font-style: italic;
+    text-align: center;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+    border-radius: 50%;
+}
