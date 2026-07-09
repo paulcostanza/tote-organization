@@ -9,6 +9,7 @@
 - add a magnifying search button
     - search bar is hidden until user selects search button
     - search hides arrow buttons (not yet implemented)
+- add a count for current items available while searching
 
 ## Style...
 - needs some color
