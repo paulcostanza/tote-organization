@@ -5,6 +5,7 @@ const kitchenThreeList = document.querySelector('.kitchen-3-list')
 const kitchenFourList = document.querySelector('.kitchen-4-list')
 const kitchenFiveList = document.querySelector('.kitchen-5-list')
 const kitchenSixList = document.querySelector('.kitchen-6-list')
+const kitchenSevenList = document.querySelector('.kitchen-7-list')
 const miscellaneousOneList = document.querySelector('.miscellaneous-1-list')
 
 // container for h2 and unorderered list
@@ -14,7 +15,8 @@ const toteContainerKitchenThree = document.querySelector('.tote-container-3')
 const toteContainerKitchenFour = document.querySelector('.tote-container-4')
 const toteContainerKitchenFive = document.querySelector('.tote-container-5')
 const toteContainerKitchenSix = document.querySelector('.tote-container-6')
-const toteContainerMiscellaneousOne = document.querySelector('.tote-container-7')
+const toteContainerKitchenSeven = document.querySelector('.tote-container-7')
+const toteContainerMiscellaneousOne = document.querySelector('.tote-container-8')
 
 // other html elements that I need
 const main = document.querySelector('main')
@@ -56,6 +58,9 @@ fetch("./items.json")
                 case "kitchen #6":
                     kitchenSixList.appendChild(list)
                     break
+                case "kitchen #7":
+                    kitchenSevenList.appendChild(list)
+                    break
                 case "miscellaneous #1":
                     miscellaneousOneList.appendChild(list)
                     break
@@ -81,6 +86,7 @@ searchInput.addEventListener("input", (e) => {
     const kitchenFourHasVisibleItem = kitchenFourList.querySelector("li:not(.hide)") !== null
     const kitchenFiveHasVisibleItem = kitchenFiveList.querySelector("li:not(.hide)") !== null
     const kitchenSixHasVisibleItem = kitchenSixList.querySelector("li:not(.hide)") !== null
+    const kitchenSevenHasVisibleItem = kitchenSevenList.querySelector("li:not(.hide)") !== null
     const miscellaneousHasVisibleItem = miscellaneousOneList.querySelector("li:not(.hide)") !== null
 
     toteContainerKitchenOne.classList.toggle('hide', !kitchenOneHasVisibleItem)
@@ -89,6 +95,7 @@ searchInput.addEventListener("input", (e) => {
     toteContainerKitchenFour.classList.toggle('hide', !kitchenFourHasVisibleItem)
     toteContainerKitchenFive.classList.toggle('hide', !kitchenFiveHasVisibleItem)
     toteContainerKitchenSix.classList.toggle('hide', !kitchenSixHasVisibleItem)
+    toteContainerKitchenSeven.classList.toggle('hide', !kitchenSevenHasVisibleItem)
     toteContainerMiscellaneousOne.classList.toggle('hide', !miscellaneousHasVisibleItem)
 
     // toggle "no items match that description" 
