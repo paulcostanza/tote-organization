@@ -22,3 +22,12 @@
 
 ## Bugs
 - Too many words in title will push number down and out of the row, and will affect the next line's quantity. You can still tell what it is, but it looks bad. However, if the word gets pushed down so the title takes up two lines then the number looks good (wtf)
+
+## Brainstorming for backend
+- Node.js + express + SQLite
+
+## Add and subtract quantity
+- make list items clickable - done
+- add a way to show each item in console when clicked - done
+- popup a modal asking to add/sub from list
+    - cancel / save btn

@@ -61,12 +61,8 @@ li {
     padding: 9px;
 }
 
-li:nth-of-type(odd) {
+div ul button:nth-of-type(odd) {
     background-color: #efefef;
-}
-
-li:last-of-type {
-    border-radius: 10px;
 }
 
 li>span {
@@ -81,6 +77,15 @@ li>span {
 
 .hide {
     display: none;
+}
+
+/* remove all default btn settings */
+.list-btn {
+    all: unset;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 /********************* F O O T E R *********************/

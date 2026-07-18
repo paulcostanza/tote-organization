@@ -31,48 +31,69 @@ fetch("./items.json")
     .then(res => res.json())
     .then(data => {
         items = data.map(item => {
+            const btn = document.createElement('button')
             const list = document.createElement('li')
             const span = document.createElement('span')
+
+            btn.classList.add("list-btn")
 
             const itemName = item.item
             const quantity = item.quantity
             list.textContent = itemName
             span.textContent = quantity
 
+            btn.dataset.name = itemName
+            btn.dataset.quantity = quantity
+
             list.appendChild(span)
+            btn.appendChild(list)
 
             switch (item.tote) {
                 case "kitchen #1":
-                    kitchenOneList.appendChild(list)
+                    kitchenOneList.appendChild(btn)
                     break
                 case "kitchen #2":
-                    kitchenTwoList.appendChild(list)
+                    kitchenTwoList.appendChild(btn)
                     break
                 case "kitchen #3":
-                    kitchenThreeList.appendChild(list)
+                    kitchenThreeList.appendChild(btn)
                     break
                 case "kitchen #4":
-                    kitchenFourList.appendChild(list)
+                    kitchenFourList.appendChild(btn)
                     break
                 case "kitchen #5":
-                    kitchenFiveList.appendChild(list)
+                    kitchenFiveList.appendChild(btn)
                     break
                 case "kitchen #6":
-                    kitchenSixList.appendChild(list)
+                    kitchenSixList.appendChild(btn)
                     break
                 case "kitchen #7":
-                    kitchenSevenList.appendChild(list)
+                    kitchenSevenList.appendChild(btn)
                     break
                 case "miscellaneous #1":
-                    miscellaneousOneList.appendChild(list)
+                    miscellaneousOneList.appendChild(btn)
                     break
                 case "miscellaneous #2":
-                    miscellaneousTwoList.appendChild(list)
+                    miscellaneousTwoList.appendChild(btn)
                     break
                 default:
                     console.log('Uh... you should\'t be here!')
             }
+
             return { name: itemName, element: list }
+        })
+        const btns = document.querySelectorAll('.list-btn')
+        console.log(btns)
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const clickedBtn = e.currentTarget
+                const name = clickedBtn.dataset.name
+                const qty = clickedBtn.dataset.quantity
+
+                console.log("Raw Button Dataset:", clickedBtn.dataset)
+                console.log(`Clicked Item: ${name} | Quantity: ${qty}`)
+            })
         })
     })
 
