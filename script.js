@@ -1,3 +1,8 @@
+// grab that database
+const SUPABASE_URL = 'https://uotvpwnsjftnslmawnck.supabase.co'
+const SUPABASE_ANON_KEY = 'sb_publishable_khMgFT3HLofq37mqebM5ww_UjYhVu3Y'
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
 // the unordered lists
 const kitchenOneList = document.querySelector('.kitchen-1-list')
 const kitchenTwoList = document.querySelector('.kitchen-2-list')
@@ -27,75 +32,83 @@ const searchInput = document.querySelector("[search-input]")
 
 let items = []
 
-fetch("./items.json")
-    .then(res => res.json())
-    .then(data => {
-        items = data.map(item => {
-            const btn = document.createElement('button')
-            const list = document.createElement('li')
-            const span = document.createElement('span')
+async function getItems() {
+    const { data, error } = await supabaseClient
+        .from('items')
+        .select('*')
 
-            btn.classList.add("list-btn")
+    if (error) {
+        console.error('Error fetching items:', error)
+        return
+    }
 
-            const itemName = item.item
-            const quantity = item.quantity
-            list.textContent = itemName
-            span.textContent = quantity
+    items = data.map(item => {
+        const btn = document.createElement('button')
+        const list = document.createElement('li')
+        const span = document.createElement('span')
 
-            btn.dataset.name = itemName
-            btn.dataset.quantity = quantity
+        btn.classList.add('list-btn')
 
-            list.appendChild(span)
-            btn.appendChild(list)
+        const itemName = item.item
+        const quantity = item.quantity
+        list.textContent = itemName
+        span.textContent = quantity
 
-            switch (item.tote) {
-                case "kitchen #1":
-                    kitchenOneList.appendChild(btn)
-                    break
-                case "kitchen #2":
-                    kitchenTwoList.appendChild(btn)
-                    break
-                case "kitchen #3":
-                    kitchenThreeList.appendChild(btn)
-                    break
-                case "kitchen #4":
-                    kitchenFourList.appendChild(btn)
-                    break
-                case "kitchen #5":
-                    kitchenFiveList.appendChild(btn)
-                    break
-                case "kitchen #6":
-                    kitchenSixList.appendChild(btn)
-                    break
-                case "kitchen #7":
-                    kitchenSevenList.appendChild(btn)
-                    break
-                case "miscellaneous #1":
-                    miscellaneousOneList.appendChild(btn)
-                    break
-                case "miscellaneous #2":
-                    miscellaneousTwoList.appendChild(btn)
-                    break
-                default:
-                    console.log('Uh... you should\'t be here!')
-            }
+        btn.dataset.name = itemName
+        btn.dataset.quantity = quantity
 
-            return { name: itemName, element: list }
-        })
-        const btns = document.querySelectorAll('.list-btn')
-        console.log(btns)
+        list.appendChild(span)
+        btn.appendChild(list)
 
-        btns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const clickedBtn = e.currentTarget
-                const name = clickedBtn.dataset.name
-                const qty = clickedBtn.dataset.quantity
+        switch (item.tote) {
+            case "kitchen #1":
+                kitchenOneList.appendChild(btn)
+                break
+            case "kitchen #2":
+                kitchenTwoList.appendChild(btn)
+                break
+            case "kitchen #3":
+                kitchenThreeList.appendChild(btn)
+                break
+            case "kitchen #4":
+                kitchenFourList.appendChild(btn)
+                break
+            case "kitchen #5":
+                kitchenFiveList.appendChild(btn)
+                break
+            case "kitchen #6":
+                kitchenSixList.appendChild(btn)
+                break
+            case "kitchen #7":
+                kitchenSevenList.appendChild(btn)
+                break
+            case "miscellaneous #1":
+                miscellaneousOneList.appendChild(btn)
+                break
+            case "miscellaneous #2":
+                miscellaneousTwoList.appendChild(btn)
+                break
+            default:
+                console.log('Uh... you should\'t be here!', item.tote)
+        }
 
-                console.log("Raw Button Dataset:", clickedBtn.dataset)
-                console.log(`Clicked Item: ${name} | Quantity: ${qty}`)
-            })
+        return { name: itemName, element: list }
+    })
+    const btns = document.querySelectorAll('.list-btn')
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const clickedBtn = e.currentTarget
+            const name = clickedBtn.dataset.name
+            const qty = clickedBtn.dataset.quantity
+
+            console.log("Raw Button Dataset:", clickedBtn.dataset)
+            console.log(`Clicked Item: ${name} | Quantity: ${qty}`)
         })
     })
+}
+
+getItems()
 
 searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase() // whatever the user types into the search bar
